@@ -5,7 +5,7 @@ This project investigates the impact of various natural language processing tech
 ### Python Installation and Dependencies:
 This project was developed using Python version 3.9. To install Python and the required packages, there are two options:
 
-1. Python 3.9 https://www.python.org/downloads/. Setting up PATH variable is not required. Do create a virtual environment, however.  
+1. Install Python 3.9 from https://www.python.org/downloads/. Setting up PATH variable is not required. Please do create a virtual environment, however.  
 
 Install the dependencies using pip:
 ```
@@ -26,7 +26,7 @@ pip install jupyterlab-git==0.41.0
 pip install wordcloud==1.8.2.2
 ```
 
-3. For a simpler route, download anaconda https://www.anaconda.com/download and use anaconda navigator. Create a new virtual environment with Python version 3.9.  
+2. For a simpler route, use anaconda navigator which can be installed from https://www.anaconda.com/download. Create a new virtual environment with Python version 3.9.  
 
 Install dependencies using the terminal:
 ```
