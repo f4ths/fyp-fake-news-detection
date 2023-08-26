@@ -50,7 +50,18 @@ conda install -c anaconda wordcloud=1.8.2.2
 
 ### Dataset
 The dataset used for this project was the LIAR dataset, which includes 12,836 human labelled short-form news content statements obtained from PolitiFact.com, and comes pre-split into train, valid, and test sets. 
-Obtain the .tsv files of the three sets from https://paperswithcode.com/dataset/liar. 
+Obtain the .tsv files of the three sets from https://paperswithcode.com/dataset/liar.
+
+### GloVe word embeddings
+GloVe was used as a word embedding method for the models. To obtain the necessary files, visit https://nlp.stanford.edu/projects/glove/ and download "Wikipedia 2014 + Gigaword 5 (6B tokens, 400K vocab, uncased, 50d, 100d, 200d, & 300d vectors, 822 MB download): glove.6B.zip "
+
+
+Only glove.6B.300d.txt and glove.6B.100d.txt were used.
+
+### preprocessing.ipynb
+
+### bilstm.ipynb 
+First deep learning model that was worked on. However, because there was no literature support for the model, it was later scrapped for ensemble.ipynb.
 
 
 
