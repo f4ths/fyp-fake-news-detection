@@ -49,7 +49,9 @@ conda install -c anaconda wordcloud=1.8.2.2
 ```
 
 ### Dataset
-The dataset used for this project was the LIAR dataset, which includes 12,836 human labelled short-form news content statements obtained from PolitiFact.com, and comes pre-split into train, valid, and test sets. 
+The dataset used for this project was the LIAR dataset, which includes 12,836 human labelled short-form news content statements obtained from PolitiFact.com, and comes pre-split into train, valid, and test sets as train.tsv, valid.tsv, and test.tsv.
+
+
 Obtain the .tsv files of the three sets from https://paperswithcode.com/dataset/liar.
 
 ### GloVe word embeddings
@@ -58,7 +60,29 @@ GloVe was used as a word embedding method for the models. To obtain the necessar
 
 Only glove.6B.300d.txt and glove.6B.100d.txt were used.
 
+## Working files
 ### preprocessing.ipynb
+This notebook prepares the LIAR dataset for model implementation:
+    Dataset Preparation:
+        Converted train.tsv, valid.tsv, and test.tsv to pandas dataframes.
+        Handled missing values in specific columns and dropped the 'state' column.
+        Mapped news statement labels to a scale from 0 (pants-fire) to 5 (true).
+        Mapped statements to binary classification: 0 for false news and 1 for true news.
+
+    Text Data Preprocessing:
+        Applied spaCy for lemmatization, lowercasing, non-alphanumeric character removal, and stop word elimination.
+        Tokenized statements and generated two vocabulary dictionaries: one for spaCy's predefined stop words and another for custom stop words based on POS tags.
+        Converted tokenized statements into numerical representations for BiLSTM-GRU model input.
+        Utilized 300d pretrained GloVe embeddings to generate embedding matrices for the BiLSTM-GRU model.
+
+    POS and DEP Processing:
+        Extracted POS and DEP tags using spaCy's NLP model, adding them as features in dataframes.
+        Generated three sets of POS tags: fine-grained, coarse-grained, and a reduced set.
+        Two DEP dictionaries were derived: one based on a reference implementation and another with additional tags to enhance Fake News Detection (FND).
+
+    Metadata Clustering:
+        Implemented two clustering methods: TF-IDF K-means (focused on the 'party' column) and Jaccard similarity clustering with specific cluster distribution for each metadata column.
+        Converted processed metadata into numerical values for the Dense model input.
 
 ### bilstm.ipynb 
 First deep learning model that was worked on. However, because there was no literature support for the model, it was later scrapped for ensemble.ipynb.
