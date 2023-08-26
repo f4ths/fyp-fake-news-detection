@@ -101,7 +101,8 @@ Key points:
 5. Model Variations: Introduced multiclass models, L2 regularization for Dense models to counter overfitting, and dropout layers in both BiLSTM and GRU layers for the BiLSTM-GRU model. Class weights provided by Aslam et al. were also tested.
 
 ### Fully Connected Dense Model
-![Model architecture for the multiclass Dense model](Fig. 8)
+![image](https://github.com/f4ths/fyp-fake-news-detection/assets/91867823/0164a468-96b4-43a6-b78f-0211c58097ef)
+
 
 Features:
 - Inclusion of POS and DEP tags in addition to metadata input.
@@ -111,7 +112,8 @@ Features:
 - Best inputs: For multiclass, pos-id-fine provided top accuracy; for binary, pos-id-spacy was superior.
 
 ### BiLSTM-GRU Model
-![Model architecture for the multiclass BiLSTM-GRU model](Fig. 9)
+![image](https://github.com/f4ths/fyp-fake-news-detection/assets/91867823/75250023-3e69-4c29-ad78-97bbdf0d1124)
+
 
 Features:
 - The model utilizes dropout layers (0.3) in both BiLSTM and GRU layers.
