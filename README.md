@@ -5,7 +5,7 @@ This project investigates the impact of various natural language processing tech
 ## Python Installation and Dependencies:
 This project was developed using Python version 3.9. To install Python and the required packages, there are two options:
 
-1. Install Python 3.9 from https://www.python.org/downloads/. Setting up PATH variable is not required. Please do create a virtual environment, however.  
+1. Install Python 3.9 from https://www.python.org/downloads/. Setting up PATH variable is not required. Virtual environment is recommended.
 
 Install the dependencies using pip:
 ```
