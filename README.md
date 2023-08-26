@@ -65,10 +65,10 @@ Only glove.6B.300d.txt and glove.6B.100d.txt were used.
 This notebook prepares the LIAR dataset for model implementation:
 
 Dataset Preparation:
-    - Converted train.tsv, valid.tsv, and test.tsv to pandas dataframes.
-    - Handled missing values in specific columns and dropped the 'state' column.
-    - Mapped news statement labels to a scale from 0 (pants-fire) to 5 (true).
-    - Mapped statements to binary classification: 0 for false news and 1 for true news.
+- Converted train.tsv, valid.tsv, and test.tsv to pandas dataframes.
+- Handled missing values in specific columns and dropped the 'state' column.
+- Mapped news statement labels to a scale from 0 (pants-fire) to 5 (true).
+- Mapped statements to binary classification: 0 for false news and 1 for true news.
 
     Text Data Preprocessing:
         Applied spaCy for lemmatization, lowercasing, non-alphanumeric character removal, and stop word elimination.
