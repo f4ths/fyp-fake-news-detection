@@ -112,7 +112,7 @@ Features:
 - Best inputs: For multiclass, pos-id-fine provided top accuracy; for binary, pos-id-spacy was superior.
 
 ### BiLSTM-GRU Model
-![image](https://github.com/f4ths/fyp-fake-news-detection/assets/91867823/75250023-3e69-4c29-ad78-97bbdf0d1124)
+![image](https://github.com/f4ths/fyp-fake-news-detection/assets/91867823/b1563995-ab98-487e-991a-06fe3e6b5053)
 
 
 Features:
